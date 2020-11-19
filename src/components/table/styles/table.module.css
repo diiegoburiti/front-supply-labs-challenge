@@ -1,0 +1,50 @@
+.table {
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  box-shadow: 2px 2px 10px 0px rgba(44, 44, 44, 0.15);
+}
+
+.tableHeader {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.tableHeader th {
+  padding: 1.1rem;
+  text-transform: uppercase;
+}
+
+.tableBody td,
+tr {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.tableBody .id,
+.age {
+  text-align: center;
+}
+
+.tableBody tr:hover {
+  background-color: #ddd;
+}
+
+.tableBody .Link {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--white-color);
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--purple-color);
+  display: block;
+  margin: auto;
+  transition: background-color 0.2s ease;
+}
+
+.tableBody .Link:hover {
+  background-color: var(--primary-color);
+}
