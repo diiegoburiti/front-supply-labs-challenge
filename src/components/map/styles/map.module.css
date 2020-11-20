@@ -1,0 +1,8 @@
+.mapContainer {
+  margin-top: 64px;
+  background: #e6f7fb;
+  border: 1px solid #b3dae2;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0px rgba(44, 44, 44, 0.15);
+  margin-bottom: 2rem;
+}
