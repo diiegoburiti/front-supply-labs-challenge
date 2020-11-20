@@ -1,11 +1,11 @@
-import './App.css'
-import Home from './pages/Home/Home'
-import './App.css'
+import Routes from './routes'
+import './global.css'
+import 'leaflet/dist/leaflet.css'
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div>
+      <Routes />
     </div>
   )
 }
