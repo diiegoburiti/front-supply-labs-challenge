@@ -57,7 +57,7 @@ export default function Table(props) {
             </button>
           </th>
 
-          <th>acoes</th>
+          <th>ações</th>
         </tr>
       </thead>
       <tbody className={styles.tableBody}>
