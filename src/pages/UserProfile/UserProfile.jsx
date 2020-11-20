@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import Button from '../../components/button/button'
-import Map from '../../components/map/map'
-import Loading from '../../helpers/loading/loading'
-import Head from '../../helpers/Head'
+import { Map, Button } from '../../components'
+import { Loading, Head } from '../../helpers'
 import api from '../../services/api'
 import styles from './styles/UserProfile.module.css'
 

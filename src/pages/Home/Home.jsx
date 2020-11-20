@@ -1,6 +1,6 @@
 import React from 'react'
-import Pagination from '../../components/pagination/pagination'
-import Head from '../../helpers/Head'
+import { Pagination } from '../../components'
+import { Head } from '../../helpers'
 import styles from './styles/home.module.css'
 
 function Home() {
