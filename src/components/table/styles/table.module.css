@@ -24,6 +24,10 @@ tr {
   transition: background-color 0.2s ease;
 }
 
+.tableBody td {
+  color: var(--purple-color);
+}
+
 .tableBody .id,
 .age {
   text-align: center;
