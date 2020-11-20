@@ -66,13 +66,13 @@ h1 {
   align-items: center;
 }
 
-.btnOrdednate.ascending::after {
+.btnOrdednate.smaller::after {
   content: '↓';
   display: inline-block;
   margin-left: 0.1em;
 }
 
-.btnOrdednate.descending::after {
+.btnOrdednate.bigger::after {
   content: '↑';
   display: inline-block;
   margin-left: 0.1em;
