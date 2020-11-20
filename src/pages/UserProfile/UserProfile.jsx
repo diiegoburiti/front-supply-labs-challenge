@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Map, Button } from '../../components'
-import { Loading, Head } from '../../helpers'
+import { Loading } from '../../helpers'
 import api from '../../services/api'
 import styles from './styles/UserProfile.module.css'
 
@@ -29,7 +29,6 @@ function UserProfile() {
   if (user)
     return (
       <main className="container showDown">
-        <Head title={user.name} />
         <section className={styles.wrapper}>
           <div className={styles.header}>
             <h1>Informações</h1>
