@@ -1,0 +1,27 @@
+.list {
+  width: 180px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: block;
+  box-shadow: 5px 5px 10px 0px rgba(44, 44, 44, 0.2);
+  border-radius: 10px;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ddd;
+  border-radius: 10px;
+  color: var(--purple-color);
+}
+
+.list span {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.list span:hover {
+  background-color: #fff;
+}
