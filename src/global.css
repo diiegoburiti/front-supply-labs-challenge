@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --purple-color: #322153;
+  --white-color: #f0f0f5;
+  --primary-color: #34cb79;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+}
+
+h1 {
+  color: var(--purple-color);
+  font-size: 2.4rem;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.btnOrdednate {
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  color: var(--white-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btnOrdednate.ascending::after {
+  content: '↓';
+  display: inline-block;
+  margin-left: 0.1em;
+}
+
+.btnOrdednate.descending::after {
+  content: '↑';
+  display: inline-block;
+  margin-left: 0.1em;
+}
+
+.leaflet-container {
+  border-bottom: 1px solid #dde3f0;
+  border-radius: 10px;
+}
+
+.leaflet-container {
+  z-index: 5;
+  position: relative;
+}
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 8.8);
+  border-radius: 20px;
+}
+
+.leaflet-popup-content-wrapper span {
+  color: #322153;
+}
+
+.leaflet-popup-tip-container {
+  display: none;
+}
+
+.showDown {
+  transition: 400ms;
+  animation: show-right 0.7s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
