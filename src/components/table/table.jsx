@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import useOrdenation from '../../hooks/useOrdenation'
+import Button from '../button/button'
 import styles from './styles/table.module.css'
 
 export default function Table(props) {
@@ -44,7 +45,7 @@ export default function Table(props) {
           </th>
           <th>Nome</th>
           <th>Sobrenome</th>
-          <th>email</th>
+          <th>e-mail</th>
           <th>
             <button
               type="button"
@@ -69,7 +70,7 @@ export default function Table(props) {
             <td className={styles.age}>{user.age}</td>
             <td>
               <Link to={`/user/${user.id}`}>
-                <button className={styles.Link}>+</button>
+                <Button>+ Info</Button>
               </Link>
             </td>
           </tr>
